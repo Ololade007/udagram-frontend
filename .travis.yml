@@ -18,5 +18,5 @@ script:
   - docker build -t udagram-frontend .
   - docker tag udagram-frontend ololade007/udagram-frontend:latest
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ololade007/udagram-frontend:v1
+  - docker push ololade007/udagram-frontend:latest
 
